@@ -3,20 +3,9 @@
     &_title
         @include h2
     &_line
-        width: 148px
-        height: 1px
-        background-color: $main_color
-        border: none
-        margin: 20px auto 17px
+        @include line
     &_subtitle
-        display: block
-        margin: 0 auto
-        width: 880px
-        font-size: 21px
-        line-height: 1.2
-        font-weight: 300
-        color: #2e2e2e
-        text-align: center
+        @include subtitle
     &_wrapper
         display: flex
         justify-content: space-between
