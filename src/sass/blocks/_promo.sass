@@ -2,7 +2,12 @@
     min-height: 680px
     background: url('../../img/background_promo.png') center center/cover no-repeat
     padding: 23px 0 82px
-    img.promo_logo
+    position: relative
+    &_line
+        margin-top: 40px
+        display: block
+        margin: 40px auto 0
+    &_logo
         display: block
         margin: 0
     &_header
@@ -70,27 +75,24 @@
             font-weight: 400
             text-transform: uppercase
             color: $white_color
-    img
-        display: block
-        margin: 38px auto 0
     &_wrapper
         display: flex
         justify-content: space-between
         margin-top: 31px
-        &_item
-            display: flex
-            flex-direction: column
-            justify-content: center
-            width: 260px
-            img
-                display: block
-                width: 65px
-                height: 65px
-                margin: 0 auto
-            &_descr
-                margin-top: 13px
-                text-align: center
-                font-size: 16px
-                line-height: 22px
-                font-weight: 300
-                color: $white_color
+    &_item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        max-width: 260px
+        img
+            display: block
+            width: 60px
+            height: 60px
+            margin: 0 auto
+    &_descr
+        margin-top: 15px
+        text-align: center
+        font-size: 16px
+        line-height: 22px
+        font-weight: 300
+        color: $white_color
