@@ -36,21 +36,7 @@
         display: flex
         justify-content: space-between
     &_phone
-        display: flex
-        flex-direction: column
-        align-items: flex-end
-        font-size: 14px
-        line-height: 24px
-        font-weight: 300
-        color: $white_color
-        a
-            font-size: 19px
-            line-height: 24px
-            font-weight: 700
-            color: $white_color
-            text-decoration: none
-            &:hover
-                color: $main_color
+        @include phonetext
     &_subtitle
         margin: 0
         text-align: center
